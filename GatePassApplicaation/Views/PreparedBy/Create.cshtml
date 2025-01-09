@@ -1,0 +1,79 @@
+﻿@model GatePassApplicaation.Models.PreparedBy
+
+<div class="container">
+<div class="row">
+	<div class="col-md-4">
+		<form asp-action="Create">
+			<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+			<div class="form-group">
+				<label asp-for="NameOfGoods" class="control-label"></label>
+				<input asp-for="NameOfGoods" class="form-control" />
+				<span asp-validation-for="NameOfGoods" class="text-danger" />
+			</div>
+			<div class="form-group">
+				<label asp-for="Reason" class="control-label"></label>
+				<input asp-for="Reason" class="form-control" />
+				<span asp-validation-for="Reason" class="text-danger" />
+			</div>
+			<div class="form-group">
+				<label asp-for="Facility" class="control-label"></label>
+				<input asp-for="Facility" class="form-control" />
+				<span asp-validation-for="Facility" class="text-danger" />
+			</div>
+			<div class="form-group">
+				<label asp-for="SupplierName" class="control-label"></label>
+				<input asp-for="SupplierName" class="form-control" />
+				<span asp-validation-for="SupplierName" class="text-danger" />
+			</div>
+			<div class="form-group">
+				<label asp-for="Description" class="control-label"></label>
+				<input asp-for="Description" class="form-control" />
+				<span asp-validation-for="Description" class="text-danger" />
+			</div>
+			<div class="form-group">
+				<label asp-for="takenBy" class="control-label"></label>
+				<input asp-for="takenBy" class="form-control" />
+				<span asp-validation-for="takenBy" class="text-danger" />
+			</div>
+			<div class="form-group">
+				<label asp-for="SendTo" class="control-label"></label>
+				<input asp-for="SendTo" class="form-control" />
+				<span asp-validation-for="SendTo" class="text-danger" />
+			</div>
+			<div class="form-group">
+				<label asp-for="Department" class="control-label"></label>
+				<input asp-for="Department" class="form-control" />
+				<span asp-validation-for="Department" class="text-danger" />
+			</div>
+			<div class="form-group">
+				<label asp-for="LineNo" class="control-label"></label>
+				<input asp-for="LineNo" class="form-control" />
+				<span asp-validation-for="LineNo" class="text-danger" />
+			</div>
+			<div class="form-group">
+				<label asp-for="DateTime" class="control-label"></label>
+				<input asp-for="DateTime" class="form-control" />
+				<span asp-validation-for="DateTime" class="text-danger" />
+			</div>
+			<div class="form-group">
+				<label asp-for="PartNo" class="control-label"></label>
+				<input asp-for="PartNo" class="form-control" />
+				<span asp-validation-for="PartNo" class="text-danger" />
+			</div>
+			<div class="form-group">
+				<label asp-for="Quantity" class="control-label"></label>
+				<input asp-for="Quantity" class="form-control" />
+				<span asp-validation-for="Quantity" class="text-danger" />
+			</div>
+			<div class="form-group">
+				<label asp-for="Value" class="control-label"></label>
+				<input asp-for="Value" class="form-control" />
+				<span asp-validation-for="Value" class="text-danger" />
+			</div>
+			<div class="form-group">
+				<input type="submit" value="Create" class="btn btn-primary" />
+			</div>
+		</form>
+	</div>
+</div>
+</div>
