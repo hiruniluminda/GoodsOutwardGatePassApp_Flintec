@@ -42,6 +42,12 @@ namespace GatePassApplicaation.Controllers
             return RedirectToAction("Index");
         }
 
+        public ActionResult Details(int id)
+        {
+            var details = dbContext.preparedBy.Find(id);
+            return View("Details", details);
+        }
+
         public ActionResult Edit(int id)
         {
             var editdetails = dbContext.preparedBy.Find(id);

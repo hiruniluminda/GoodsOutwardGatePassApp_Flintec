@@ -1,5 +1,6 @@
 ﻿using GatePassApplicaation.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.Blazor;
 
 namespace GatePassApplicaation.Controllers
@@ -40,7 +41,17 @@ namespace GatePassApplicaation.Controllers
             return View(approvedIndex.ToList());
         }
 
-       [HttpPost]
+        public ActionResult DetailsNotApproved(int id)
+        {
+            var details = _appDbContext.preparedBy.Find(id);
+            return View("DetailsNotApproved", details);
+        }
+        public ActionResult DetailsApproved(int id)
+        {
+            var details = _appDbContext.authorizedBy.Find(id);
+            return View("DetailsApproved", details);
+        }
+        [HttpPost]
 public IActionResult Approve(int id)
 {
     var record = _appDbContext.preparedBy.FirstOrDefault(a => a.PreparedById == id);
@@ -63,7 +74,7 @@ public IActionResult Approve(int id)
                 SendTo = record.SendTo,
                 Department = record.Department,
                 LineNo = record.LineNo,
-                DateTime = record.DateTime,
+                DateTime = DateOnly.FromDateTime(DateTime.Now),
                 PartNo = record.PartNo,
                 Quantity = record.Quantity,
                 Value = record.Value,

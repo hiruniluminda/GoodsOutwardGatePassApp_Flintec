@@ -286,3 +286,4 @@ C:\Users\hiru\source\repos\GatePassApplicaation\GatePassApplicaation\bin\Debug\n
 C:\Users\hiru\source\repos\GatePassApplicaation\GatePassApplicaation\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\hiru\source\repos\GatePassApplicaation\GatePassApplicaation\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\hiru\source\repos\GatePassApplicaation\GatePassApplicaation\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\hiru\source\repos\GatePassApplicaation\GatePassApplicaation\obj\Debug\net8.0\GatePassApplicaation.sourcelink.json

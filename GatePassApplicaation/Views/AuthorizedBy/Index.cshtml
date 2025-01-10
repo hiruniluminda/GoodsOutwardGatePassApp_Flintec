@@ -4,12 +4,23 @@
     ViewData["Title"] = "Index";
 }
 
-<h3>Non Approved List</h3>
+<style>
+    body {
+        background-image: url('/Images/notapp3.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    }
+</style>
 
 <p>
     <a asp-action="IndexApproved" class="btn btn-success">Approved</a>
     <a asp-action="Index" class="btn btn-dark">Non Approved</a>
 </p>
+
+<h3>Non Approved List</h3>
+
 <form asp-action="Index" method="get" class="mb-3">
     <div class="row">
         <div class="col-md-4">
@@ -25,26 +36,30 @@
         </div>
     </div>
 </form>
-<table class="table">
-    <thead>
+<div class="modal fade" id="detailsModal" tabindex="-1" role="dialog" aria-labelledby="detailsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="detailsModalLabel">Details</h5>
+                <button type="button" class="close" onclick="$('#detailsModal').modal('hide');" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+
+            </div>
+            <div class="modal-body" id="detailsModalBody">
+                @* loading data here *@
+            </div>
+        </div>
+    </div>
+</div>
+<table class="table table-hover table-responsive">
+    <thead class="table-dark">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.NameOfGoods)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Reason)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.Facility)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SupplierName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PreparedPerson)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Description)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.takenBy)
@@ -73,26 +88,14 @@
             <th></th>
         </tr>
     </thead>
-    <tbody>
+    <tbody class="table-light">
 @foreach (var item in Model) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.NameOfGoods)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Reason)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.Facility)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SupplierName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PreparedPerson)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.takenBy)
@@ -119,11 +122,31 @@
                 @Html.DisplayFor(modelItem => item.Value)
             </td>
             <td>
+                    <div class="d-flex justify-content-start gap-2">
+
+                    <a href="#" onclick="loadDetails(@item.PreparedById)" class="btn btn-info">Details</a>
+
                 <form asp-action="Approve" asp-route-id="@item.PreparedById" method="post" style="display:inline;">
                    <button type="submit" class="btn btn-success">Approve</button>
                 </form>
+                </div>
             </td>
         </tr>
 }
     </tbody>
 </table>
+<script>
+    function loadDetails(id) {
+        $.ajax({
+            url: '/AuthorizedBy/DetailsNotApproved/' + id,
+            type: 'GET',
+            success: function (data) {
+                $('#detailsModalBody').html(data);
+                $('#detailsModal').modal('show');
+            },
+            error: function () {
+                alert('Failed to load details.');
+            }
+        });
+    }
+</script>
