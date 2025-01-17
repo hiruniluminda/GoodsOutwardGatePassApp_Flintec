@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "C3Ql2Vc/2JWWfht9+7eZ4G0jo6W944jouMWV84nAUmg=",
+  "Hash": "uq9YoF6eOpebgSQL+Oqc6qRogUEWx1N9Skwu072ehzM=",
   "Source": "GatePassApplicaation",
   "BasePath": "_content/GatePassApplicaation",
   "Mode": "Default",
@@ -435,6 +435,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\backtable.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\wwwroot\\Images\\logo.jpg",
+      "SourceId": "GatePassApplicaation",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\wwwroot\\",
+      "BasePath": "_content/GatePassApplicaation",
+      "RelativePath": "Images/logo#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hbrgkkh6qh",
+      "Integrity": "TeLUNGWA+WNnqEidOMhH5RsMdgkQedgwGpzRbxkstFE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\logo.jpg"
     },
     {
       "Identity": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\wwwroot\\Images\\notapp.avif",
@@ -3377,6 +3398,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-el6RkZ2GB6HYXPmwpeymnuTp7ss6qNHenzgm9reBuYc="
+        }
+      ]
+    },
+    {
+      "Route": "Images/logo.hbrgkkh6qh.jpg",
+      "AssetFile": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\wwwroot\\Images\\logo.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3875"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TeLUNGWA+WNnqEidOMhH5RsMdgkQedgwGpzRbxkstFE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Jan 2025 19:34:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hbrgkkh6qh"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/logo.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TeLUNGWA+WNnqEidOMhH5RsMdgkQedgwGpzRbxkstFE="
+        }
+      ]
+    },
+    {
+      "Route": "Images/logo.jpg",
+      "AssetFile": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\wwwroot\\Images\\logo.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3875"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TeLUNGWA+WNnqEidOMhH5RsMdgkQedgwGpzRbxkstFE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Jan 2025 19:34:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TeLUNGWA+WNnqEidOMhH5RsMdgkQedgwGpzRbxkstFE="
         }
       ]
     },

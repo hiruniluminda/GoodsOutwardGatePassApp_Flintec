@@ -1,98 +1,140 @@
 ﻿@model GatePassApplicaation.Models.AuthorizedBy
 
-<div>
-    <h4>AuthorizedBy</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.NameOfGoods)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.NameOfGoods)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Reason)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Reason)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Facility)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Facility)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SupplierName)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.SupplierName)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.PreparedPerson)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.PreparedPerson)
-        </dd>
-        <dt class = "col-sm-3">
-            @Html.DisplayNameFor(model => model.AuthorizedPerson)
-        </dt>
-        <dd class = "col-sm-9">
-            @Html.DisplayFor(model => model.AuthorizedPerson)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Description)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.takenBy)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.takenBy)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SendTo)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.SendTo)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Department)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Department)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.LineNo)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.LineNo)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DateTime)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.DateTime)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.PartNo)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.PartNo)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Quantity)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Quantity)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Value)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Value)
-        </dd>
-    </dl>
+
+<style>
+    .bdy {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
+
+    .company-logo {
+        color: #dc3545;
+        font-weight: bold;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .imglogo {
+        width: 20px;
+    }
+
+    .form-title {
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .gate-pass-form {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        background-color: white;
+    }
+
+    .info-section {
+        margin-bottom: 20px;
+    }
+
+    .tblhead {
+        background-color: #f8f9fa;
+    }
+
+    .footer-text {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .company-details {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .contact-info {
+        text-align: center;
+        font-size: 14px;
+    }
+</style>
+<div class="bdy">
+    <div class="gate-pass-form">
+
+        <div class="company-logo"><img class="imglogo" src="/Images/logo.jpg" />FLINTEC</div>
+        <div class="form-title">GOODS OUTWARD NOTE</div>
+
+        <div class="info-section row">
+            <div class="col-md-8">
+                <div class="mb-2">
+                    <strong>Reason:</strong> @Html.DisplayFor(model => model.Reasons.ReasonName)
+                </div>
+                <div class="mb-2">
+                    <strong>Send To:</strong> @Html.DisplayFor(model => model.SendTo)
+                </div>
+                <div class="mb-2">
+                    <strong>Taken By:</strong> @Html.DisplayFor(model => model.takenBy)
+                </div>
+                <div class="mb-2">
+                    <strong>Prepared Person:</strong> @Html.DisplayFor(model => model.PreparedPerson)
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-2">
+                    <strong>Pass No:</strong> @Html.DisplayFor(model => model.PreparedById)
+                </div>
+                <div class="mb-2">
+                    <strong>Authorized Person:</strong> @Html.DisplayFor(model => model.AuthorizedPerson)
+                </div>
+                <div class="mb-2">
+                    <strong>Date:</strong> @Html.DisplayFor(model => model.DateTime)
+                </div>
+            </div>
+        </div>
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th class="tblhead">Line NO</th>
+                    <th class="tblhead">Part No</th>
+                    <th class="tblhead">Description</th>
+                    <th class="tblhead">Qty</th>
+                    <th class="tblhead">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>@Html.DisplayFor(model => model.LineNo)</td>
+                    <td>@Html.DisplayFor(model => model.PartNo)</td>
+                    <td>@Html.DisplayFor(model => model.Description)</td>
+                    <td>@Html.DisplayFor(model => model.Quantity)</td>
+                    <td>@Html.DisplayFor(model => model.Value)</td>
+                </tr>
+                @for (int i = 0; i < 7; i++)
+                {
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <div class="footer-text">
+            This is system generated gatepass and valid without signature
+        </div>
+
+        <div class="company-details">
+            <strong>FLINTEC TRANSDUCERS (PVT) LTD</strong>
+            <div>Phase 1, Spur Road 2, K.E.P.Z. -Katunayake.</div>
+        </div>
+
+        <div class="contact-info">
+            <span><strong>Phone:</strong> 011-4837700</span> •
+            <span><strong>Fax:</strong> 011-2252142</span> •
+            <span><strong>E-mail:</strong> office@flintec.com</span>
+            <div>www.flintec.com</div>
+        </div>
+    </div>
 </div>

@@ -54,6 +54,9 @@
     <thead class="table-dark">
         <tr>
             <th>
+                @Html.DisplayNameFor(model => model.PreparedById)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.NameOfGoods)
             </th>
             <th>
@@ -89,6 +92,9 @@
     <tbody class="table-light">
 @foreach (var item in Model) {
         <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PreparedById)
+                </td>
             <td>
                 @Html.DisplayFor(modelItem => item.NameOfGoods)
             </td>

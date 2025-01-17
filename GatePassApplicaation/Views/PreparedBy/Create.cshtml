@@ -16,9 +16,9 @@
                         </div>
 
                         <div class="form-group mb-3">
-                            <label asp-for="Reason" class="form-label fw-bold"></label>
-                            <input asp-for="Reason" class="form-control" />
-                            <span asp-validation-for="Reason" class="text-danger"></span>
+                            <label asp-for="ReasonId" class="form-label fw-bold"></label>
+                            <select asp-for="ReasonId" class="form-control" asp-items="ViewBag.ReasonId"></select>
+                            <span asp-validation-for="ReasonId" class="text-danger"></span>
                         </div>
 
                         <div class="form-group mb-3">
@@ -68,7 +68,7 @@
 
                         <div class="form-group mb-3">
                             <label asp-for="DateTime" class="form-label fw-bold"></label>
-                            <input asp-for="DateTime" type="datetime-local" class="form-control" />
+                            <input asp-for="DateTime" type="date" class="form-control" />
                             <span asp-validation-for="DateTime" class="text-danger"></span>
                         </div>
 

@@ -43,12 +43,12 @@ namespace GatePassApplicaation.Controllers
 
         public ActionResult DetailsNotApproved(int id)
         {
-            var details = _appDbContext.preparedBy.Find(id);
+            var details = _appDbContext.preparedBy.Include(d=>d.Reasons).FirstOrDefault(d=>d.PreparedById==id);
             return View("DetailsNotApproved", details);
         }
         public ActionResult DetailsApproved(int id)
         {
-            var details = _appDbContext.authorizedBy.Find(id);
+            var details = _appDbContext.authorizedBy.Include(d => d.Reasons).FirstOrDefault(d => d.PreparedById == id);
             return View("DetailsApproved", details);
         }
         [HttpPost]
@@ -65,7 +65,7 @@ public IActionResult Approve(int id)
             newRecord = new AuthorizedBy
             {
                 NameOfGoods = record.NameOfGoods,
-                Reason = record.Reason,
+                ReasonId = record.ReasonId,
                 Facility = record.Facility,
                 SupplierName = record.SupplierName,
                 PreparedPerson = record.PreparedPerson,
@@ -112,7 +112,7 @@ public IActionResult Approve(int id)
                     newRecord = new PreparedBy
                     {
                         NameOfGoods = record.NameOfGoods,
-                        Reason = record.Reason,
+                        ReasonId = record.ReasonId,
                         Facility = record.Facility,
                         SupplierName = record.SupplierName,
                         Description = record.Description,

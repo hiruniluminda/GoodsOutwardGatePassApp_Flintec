@@ -21,6 +21,8 @@ namespace GatePassApplicaation.Controllers
             var user = _appDbContext.users.FirstOrDefault(u=>u.UserName == username && u.Password == password);
             if (user != null) {
                 HttpContext.Session.SetString("UserName", user.UserName);
+                HttpContext.Session.SetString("Facility", user.Facility);
+
                 HttpContext.Session.SetString("Role",user.Role);
 
                 if (user.Role == "Admin")

@@ -1,5 +1,6 @@
 ﻿using GatePassApplicaation.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
 namespace GatePassApplicaation.Controllers
@@ -30,11 +31,18 @@ namespace GatePassApplicaation.Controllers
 
         public ActionResult Create()
         {
-            return View();
+            var model = new PreparedBy
+            {
+                DateTime = DateOnly.FromDateTime(DateTime.Now),
+                Facility = HttpContext.Session.GetString("Facility")
+            };
+            ViewBag.ReasonId = dbContext.reasons.Select(d=>new SelectListItem { Value=d.ReasonId.ToString(),Text=d.ReasonName }).ToList();
+            return View(model);
         }
         [HttpPost]
         public ActionResult Create(PreparedBy preparedBy)
         {
+            ViewBag.ReasonId = dbContext.reasons.Select(d => new SelectListItem { Value = d.ReasonId.ToString(), Text = d.ReasonName }).ToList();
             var createdBy = HttpContext.Session.GetString("UserName");
             preparedBy.PreparedPerson = createdBy;
             dbContext.Add(preparedBy);
@@ -44,18 +52,21 @@ namespace GatePassApplicaation.Controllers
 
         public ActionResult Details(int id)
         {
-            var details = dbContext.preparedBy.Find(id);
-            return View("Details", details);
+            var data = dbContext.preparedBy.Include(pb => pb.Reasons).FirstOrDefault(pb => pb.PreparedById == id);
+            return View("Details", data);
         }
 
         public ActionResult Edit(int id)
         {
+            ViewBag.ReasonId = dbContext.reasons.Select(d => new SelectListItem { Value = d.ReasonId.ToString(), Text = d.ReasonName }).ToList();
+            var data = dbContext.preparedBy.Include(pb => pb.Reasons).FirstOrDefault(pb => pb.PreparedById == id);
             var editdetails = dbContext.preparedBy.Find(id);
             return View(editdetails);
         }
         [HttpPost]
         public ActionResult Edit(PreparedBy preparedBy)
         {
+            ViewBag.ReasonId = dbContext.reasons.Select(d => new SelectListItem { Value = d.ReasonId.ToString(), Text = d.ReasonName }).ToList();
             dbContext.Entry(preparedBy).State = EntityState.Modified;
             dbContext.SaveChanges();
             return RedirectToAction("Index");

@@ -9,6 +9,7 @@ namespace GatePassApplicaation.Models
         public DbSet<PreparedBy> preparedBy { get; set; }
         public DbSet<AuthorizedBy> authorizedBy { get; set; }
         public DbSet<User> users { get; set; }
+        public DbSet<Reasons> reasons { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

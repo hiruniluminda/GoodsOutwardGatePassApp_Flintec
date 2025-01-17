@@ -4,6 +4,7 @@ using GatePassApplicaation.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GatePassApplicaation.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250117180649_InitialCreatex")]
+    partial class InitialCreatex
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -67,6 +70,9 @@ namespace GatePassApplicaation.Migrations
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
 
+                    b.Property<int>("Reason")
+                        .HasColumnType("int");
+
                     b.Property<int>("ReasonId")
                         .HasColumnType("int");
 
@@ -87,7 +93,7 @@ namespace GatePassApplicaation.Migrations
 
                     b.HasKey("PreparedById");
 
-                    b.HasIndex("ReasonId");
+                    b.HasIndex("Reason");
 
                     b.ToTable("authorizedBy");
                 });
@@ -133,6 +139,9 @@ namespace GatePassApplicaation.Migrations
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
 
+                    b.Property<int>("Reason")
+                        .HasColumnType("int");
+
                     b.Property<int>("ReasonId")
                         .HasColumnType("int");
 
@@ -153,7 +162,7 @@ namespace GatePassApplicaation.Migrations
 
                     b.HasKey("PreparedById");
 
-                    b.HasIndex("ReasonId");
+                    b.HasIndex("Reason");
 
                     b.ToTable("preparedBy");
                 });
@@ -208,7 +217,7 @@ namespace GatePassApplicaation.Migrations
                 {
                     b.HasOne("GatePassApplicaation.Models.Reasons", "Reasons")
                         .WithMany()
-                        .HasForeignKey("ReasonId")
+                        .HasForeignKey("Reason")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -219,7 +228,7 @@ namespace GatePassApplicaation.Migrations
                 {
                     b.HasOne("GatePassApplicaation.Models.Reasons", "Reasons")
                         .WithMany()
-                        .HasForeignKey("ReasonId")
+                        .HasForeignKey("Reason")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

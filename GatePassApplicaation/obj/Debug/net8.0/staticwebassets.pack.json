@@ -69,6 +69,10 @@
       "PackagePath": "staticwebassets\\Images\\backtable.jpg"
     },
     {
+      "Id": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\wwwroot\\Images\\logo.jpg",
+      "PackagePath": "staticwebassets\\Images\\logo.jpg"
+    },
+    {
       "Id": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\wwwroot\\Images\\notapp.avif",
       "PackagePath": "staticwebassets\\Images\\notapp.avif"
     },
