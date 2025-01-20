@@ -7,6 +7,62 @@
       "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\controllers\\approvedcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\models\\passheaderadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\models\\passheaderadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\models\\passnoteadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\models\\passnoteadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\models\\passheader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\models\\passheader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\models\\passnote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\models\\passnote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\controllers\\authorizedbycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\controllers\\authorizedbycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\models\\passheaderlead.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\models\\passheaderlead.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\views\\approved\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\views\\approved\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\views\\approved\\indexapproved.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\views\\approved\\indexapproved.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\models\\passnotelead.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\models\\passnotelead.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\controllers\\preparedbycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\controllers\\preparedbycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\views\\approved\\detailsnotapproved.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\views\\approved\\detailsnotapproved.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\views\\approved\\detailsapproved.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\views\\approved\\detailsapproved.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\views\\preparedby\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\views\\preparedby\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\views\\authorizedby\\indexapproved.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\views\\authorizedby\\indexapproved.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -23,24 +79,40 @@
       "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\views\\authorizedby\\detailsnotapproved.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\views\\preparedby\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\views\\preparedby\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\controllers\\preparedbycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\controllers\\preparedbycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\views\\preparedby\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\views\\preparedby\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\views\\preparedby\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\views\\preparedby\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\models\\preparedby.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\models\\preparedby.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\views\\preparedby\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\views\\preparedby\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\models\\approvedviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\models\\approvedviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\models\\passheaderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\models\\passheaderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,48 +123,12 @@
       "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\models\\authorizedby.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\models\\approved.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\models\\approved.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\models\\reasons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\models\\reasons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Migrations\\20250117183610_InitialCreatexyz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GatePassApplicaation\\Migrations\\20250117183610_InitialCreatexyz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Migrations\\20250117180649_InitialCreatex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GatePassApplicaation\\Migrations\\20250117180649_InitialCreatex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\views\\preparedby\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\views\\preparedby\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\controllers\\authorizedbycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\controllers\\authorizedbycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|c:\\users\\hiru\\source\\repos\\gatepassapplicaation\\gatepassapplicaation\\migrations\\20250119200309_initialcreatey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ECEA1AA-C123-4CF6-AE1C-D9E0BE75E681}|GatePassApplicaation\\GatePassApplicaation.csproj|solutionrelative:gatepassapplicaation\\migrations\\20250119200309_initialcreatey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -112,261 +148,313 @@
               "RelativeDocumentMoniker": "GatePassApplicaation\\Controllers\\ApprovedController.cs",
               "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Controllers\\ApprovedController.cs",
               "RelativeToolTip": "GatePassApplicaation\\Controllers\\ApprovedController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAGMAAADgNjMzMzMvwHcAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-17T19:54:14.415Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Models\\User.cs",
-              "RelativeDocumentMoniker": "GatePassApplicaation\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Models\\User.cs",
-              "RelativeToolTip": "GatePassApplicaation\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "PassHeaderLead.cs",
+              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Models\\PassHeaderLead.cs",
+              "RelativeDocumentMoniker": "GatePassApplicaation\\Models\\PassHeaderLead.cs",
+              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Models\\PassHeaderLead.cs",
+              "RelativeToolTip": "GatePassApplicaation\\Models\\PassHeaderLead.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T17:02:41.718Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "GatePassApplicaation\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "GatePassApplicaation\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAA0AAACA+/////8fwBYAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T10:13:38.999Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\PreparedBy\\Details.cshtml",
-              "RelativeDocumentMoniker": "GatePassApplicaation\\Views\\PreparedBy\\Details.cshtml",
-              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\PreparedBy\\Details.cshtml",
-              "RelativeToolTip": "GatePassApplicaation\\Views\\PreparedBy\\Details.cshtml",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAqwHoAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-15T11:10:27.478Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DetailsNotApproved.cshtml",
-              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\AuthorizedBy\\DetailsNotApproved.cshtml",
-              "RelativeDocumentMoniker": "GatePassApplicaation\\Views\\AuthorizedBy\\DetailsNotApproved.cshtml",
-              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\AuthorizedBy\\DetailsNotApproved.cshtml",
-              "RelativeToolTip": "GatePassApplicaation\\Views\\AuthorizedBy\\DetailsNotApproved.cshtml",
-              "ViewState": "AgIAADcAAAAAdDMzMzP7v0AAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-10T05:59:09.076Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DetailsApproved.cshtml",
-              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\AuthorizedBy\\DetailsApproved.cshtml",
-              "RelativeDocumentMoniker": "GatePassApplicaation\\Views\\AuthorizedBy\\DetailsApproved.cshtml",
-              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\AuthorizedBy\\DetailsApproved.cshtml",
-              "RelativeToolTip": "GatePassApplicaation\\Views\\AuthorizedBy\\DetailsApproved.cshtml",
-              "ViewState": "AgIAAD0AAACAPjMzMzMrwEEAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-10T05:54:55.485Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\AuthorizedBy\\Index.cshtml",
-              "RelativeDocumentMoniker": "GatePassApplicaation\\Views\\AuthorizedBy\\Index.cshtml",
-              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\AuthorizedBy\\Index.cshtml",
-              "RelativeToolTip": "GatePassApplicaation\\Views\\AuthorizedBy\\Index.cshtml",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAqwCIAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-08T19:47:39.654Z",
+              "WhenOpened": "2025-01-19T17:52:50.124Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IndexApproved.cshtml",
-              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\AuthorizedBy\\IndexApproved.cshtml",
-              "RelativeDocumentMoniker": "GatePassApplicaation\\Views\\AuthorizedBy\\IndexApproved.cshtml",
-              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\AuthorizedBy\\IndexApproved.cshtml",
-              "RelativeToolTip": "GatePassApplicaation\\Views\\AuthorizedBy\\IndexApproved.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-09T18:57:04.61Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PreparedByController.cs",
-              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Controllers\\PreparedByController.cs",
-              "RelativeDocumentMoniker": "GatePassApplicaation\\Controllers\\PreparedByController.cs",
-              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Controllers\\PreparedByController.cs",
-              "RelativeToolTip": "GatePassApplicaation\\Controllers\\PreparedByController.cs",
-              "ViewState": "AgIAADIAAAAAvszMzMz0vyAAAAAJAAAAAAAAAA==",
+              "Title": "PassHeaderAdmin.cs",
+              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Models\\PassHeaderAdmin.cs",
+              "RelativeDocumentMoniker": "GatePassApplicaation\\Models\\PassHeaderAdmin.cs",
+              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Models\\PassHeaderAdmin.cs",
+              "RelativeToolTip": "GatePassApplicaation\\Models\\PassHeaderAdmin.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAywBoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T19:17:18.072Z",
+              "WhenOpened": "2025-01-19T17:52:39.991Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\PreparedBy\\Create.cshtml",
-              "RelativeDocumentMoniker": "GatePassApplicaation\\Views\\PreparedBy\\Create.cshtml",
-              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\PreparedBy\\Create.cshtml",
-              "RelativeToolTip": "GatePassApplicaation\\Views\\PreparedBy\\Create.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAABivRMAAABnAAAAAAAAAA==",
+              "Title": "IndexApproved.cshtml",
+              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\Approved\\IndexApproved.cshtml",
+              "RelativeDocumentMoniker": "GatePassApplicaation\\Views\\Approved\\IndexApproved.cshtml",
+              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\Approved\\IndexApproved.cshtml",
+              "RelativeToolTip": "GatePassApplicaation\\Views\\Approved\\IndexApproved.cshtml",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAqwHUAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-10T05:19:32.332Z",
+              "WhenOpened": "2025-01-18T18:11:44.001Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AuthorizedBy.cs",
-              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Models\\AuthorizedBy.cs",
-              "RelativeDocumentMoniker": "GatePassApplicaation\\Models\\AuthorizedBy.cs",
-              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Models\\AuthorizedBy.cs",
-              "RelativeToolTip": "GatePassApplicaation\\Models\\AuthorizedBy.cs",
-              "ViewState": "AgIAAAYAAAAAgmZmZmYCwBQAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T17:02:53.246Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "GatePassApplicaation\\Models\\ErrorViewModel.cs",
-              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "GatePassApplicaation\\Models\\ErrorViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T17:02:55.596Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PreparedBy.cs",
-              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Models\\PreparedBy.cs",
-              "RelativeDocumentMoniker": "GatePassApplicaation\\Models\\PreparedBy.cs",
-              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Models\\PreparedBy.cs",
-              "RelativeToolTip": "GatePassApplicaation\\Models\\PreparedBy.cs",
-              "ViewState": "AgIAAAYAAACcMzMzM7MxwA8AAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T11:00:40.375Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Reasons.cs",
-              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Models\\Reasons.cs",
-              "RelativeDocumentMoniker": "GatePassApplicaation\\Models\\Reasons.cs",
-              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Models\\Reasons.cs",
-              "RelativeToolTip": "GatePassApplicaation\\Models\\Reasons.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T17:05:30.736Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\PreparedBy\\Edit.cshtml",
-              "RelativeDocumentMoniker": "GatePassApplicaation\\Views\\PreparedBy\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\PreparedBy\\Edit.cshtml",
-              "RelativeToolTip": "GatePassApplicaation\\Views\\PreparedBy\\Edit.cshtml",
-              "ViewState": "AgIAAA4AAABAnJmZmZkuwBwAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-15T11:10:28.576Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Models\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "GatePassApplicaation\\Models\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Models\\AppDbContext.cs",
-              "RelativeToolTip": "GatePassApplicaation\\Models\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T17:06:19.756Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "20250117183610_InitialCreatexyz.cs",
-              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Migrations\\20250117183610_InitialCreatexyz.cs",
-              "RelativeDocumentMoniker": "GatePassApplicaation\\Migrations\\20250117183610_InitialCreatexyz.cs",
-              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Migrations\\20250117183610_InitialCreatexyz.cs",
-              "RelativeToolTip": "GatePassApplicaation\\Migrations\\20250117183610_InitialCreatexyz.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T18:36:10.384Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\PreparedBy\\Index.cshtml",
-              "RelativeDocumentMoniker": "GatePassApplicaation\\Views\\PreparedBy\\Index.cshtml",
-              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\PreparedBy\\Index.cshtml",
-              "RelativeToolTip": "GatePassApplicaation\\Views\\PreparedBy\\Index.cshtml",
-              "ViewState": "AgIAAEMAAAAAXDMzMzMbwF4AAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-09T19:23:30.698Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "20250117180649_InitialCreatex.cs",
-              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Migrations\\20250117180649_InitialCreatex.cs",
-              "RelativeDocumentMoniker": "GatePassApplicaation\\Migrations\\20250117180649_InitialCreatex.cs",
-              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Migrations\\20250117180649_InitialCreatex.cs",
-              "RelativeToolTip": "GatePassApplicaation\\Migrations\\20250117180649_InitialCreatex.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T18:06:50.341Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 5,
               "Title": "AuthorizedByController.cs",
               "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Controllers\\AuthorizedByController.cs",
               "RelativeDocumentMoniker": "GatePassApplicaation\\Controllers\\AuthorizedByController.cs",
               "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Controllers\\AuthorizedByController.cs",
               "RelativeToolTip": "GatePassApplicaation\\Controllers\\AuthorizedByController.cs",
-              "ViewState": "AgIAABsAAABArJmZmZkbwC8AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAHMAAACAFgAAAAAuwIIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T19:44:22.964Z",
+              "WhenOpened": "2025-01-18T17:46:11.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PassNoteAdmin.cs",
+              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Models\\PassNoteAdmin.cs",
+              "RelativeDocumentMoniker": "GatePassApplicaation\\Models\\PassNoteAdmin.cs",
+              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Models\\PassNoteAdmin.cs",
+              "RelativeToolTip": "GatePassApplicaation\\Models\\PassNoteAdmin.cs",
+              "ViewState": "AgIAAAQAAAAwy8zMzMwewBIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T17:52:19.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PassHeader.cs",
+              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Models\\PassHeader.cs",
+              "RelativeDocumentMoniker": "GatePassApplicaation\\Models\\PassHeader.cs",
+              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Models\\PassHeader.cs",
+              "RelativeToolTip": "GatePassApplicaation\\Models\\PassHeader.cs",
+              "ViewState": "AgIAAAkAAADA/f////8pwBQAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T18:23:31.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PassNote.cs",
+              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Models\\PassNote.cs",
+              "RelativeDocumentMoniker": "GatePassApplicaation\\Models\\PassNote.cs",
+              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Models\\PassNote.cs",
+              "RelativeToolTip": "GatePassApplicaation\\Models\\PassNote.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwA4AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T17:48:25.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PreparedByController.cs",
+              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Controllers\\PreparedByController.cs",
+              "RelativeDocumentMoniker": "GatePassApplicaation\\Controllers\\PreparedByController.cs",
+              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Controllers\\PreparedByController.cs",
+              "RelativeToolTip": "GatePassApplicaation\\Controllers\\PreparedByController.cs",
+              "ViewState": "AgIAABoAAAAAz8zMzMwUwEkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T18:01:31.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PassNoteLead.cs",
+              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Models\\PassNoteLead.cs",
+              "RelativeDocumentMoniker": "GatePassApplicaation\\Models\\PassNoteLead.cs",
+              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Models\\PassNoteLead.cs",
+              "RelativeToolTip": "GatePassApplicaation\\Models\\PassNoteLead.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T17:53:06.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\Approved\\Index.cshtml",
+              "RelativeDocumentMoniker": "GatePassApplicaation\\Views\\Approved\\Index.cshtml",
+              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\Approved\\Index.cshtml",
+              "RelativeToolTip": "GatePassApplicaation\\Views\\Approved\\Index.cshtml",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-18T18:10:34.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DetailsNotApproved.cshtml",
+              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\Approved\\DetailsNotApproved.cshtml",
+              "RelativeDocumentMoniker": "GatePassApplicaation\\Views\\Approved\\DetailsNotApproved.cshtml",
+              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\Approved\\DetailsNotApproved.cshtml",
+              "RelativeToolTip": "GatePassApplicaation\\Views\\Approved\\DetailsNotApproved.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-18T18:10:15.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Models\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "GatePassApplicaation\\Models\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Models\\AppDbContext.cs",
+              "RelativeToolTip": "GatePassApplicaation\\Models\\AppDbContext.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAkwBUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T17:56:02.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DetailsApproved.cshtml",
+              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\Approved\\DetailsApproved.cshtml",
+              "RelativeDocumentMoniker": "GatePassApplicaation\\Views\\Approved\\DetailsApproved.cshtml",
+              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\Approved\\DetailsApproved.cshtml",
+              "RelativeToolTip": "GatePassApplicaation\\Views\\Approved\\DetailsApproved.cshtml",
+              "ViewState": "AgIAAEIAAACA+P////8gwFQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-19T19:27:57.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DetailsApproved.cshtml",
+              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\AuthorizedBy\\DetailsApproved.cshtml",
+              "RelativeDocumentMoniker": "GatePassApplicaation\\Views\\AuthorizedBy\\DetailsApproved.cshtml",
+              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\AuthorizedBy\\DetailsApproved.cshtml",
+              "RelativeToolTip": "GatePassApplicaation\\Views\\AuthorizedBy\\DetailsApproved.cshtml",
+              "ViewState": "AgIAAEMAAABAnJmZmZkuwI0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-19T19:28:30.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IndexApproved.cshtml",
+              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\AuthorizedBy\\IndexApproved.cshtml",
+              "RelativeDocumentMoniker": "GatePassApplicaation\\Views\\AuthorizedBy\\IndexApproved.cshtml",
+              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\AuthorizedBy\\IndexApproved.cshtml",
+              "RelativeToolTip": "GatePassApplicaation\\Views\\AuthorizedBy\\IndexApproved.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-18T18:49:22.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\PreparedBy\\Index.cshtml",
+              "RelativeDocumentMoniker": "GatePassApplicaation\\Views\\PreparedBy\\Index.cshtml",
+              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\PreparedBy\\Index.cshtml",
+              "RelativeToolTip": "GatePassApplicaation\\Views\\PreparedBy\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-19T19:56:37.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\AuthorizedBy\\Index.cshtml",
+              "RelativeDocumentMoniker": "GatePassApplicaation\\Views\\AuthorizedBy\\Index.cshtml",
+              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\AuthorizedBy\\Index.cshtml",
+              "RelativeToolTip": "GatePassApplicaation\\Views\\AuthorizedBy\\Index.cshtml",
+              "ViewState": "AgIAABcAAAAANDMzMzMLwGwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-18T18:48:36.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DetailsNotApproved.cshtml",
+              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\AuthorizedBy\\DetailsNotApproved.cshtml",
+              "RelativeDocumentMoniker": "GatePassApplicaation\\Views\\AuthorizedBy\\DetailsNotApproved.cshtml",
+              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\AuthorizedBy\\DetailsNotApproved.cshtml",
+              "RelativeToolTip": "GatePassApplicaation\\Views\\AuthorizedBy\\DetailsNotApproved.cshtml",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAUwIsAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-18T18:47:51.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "GatePassApplicaation\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "GatePassApplicaation\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABMAAADgY2ZmZmYiwB8AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T18:12:29.539Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\PreparedBy\\Details.cshtml",
+              "RelativeDocumentMoniker": "GatePassApplicaation\\Views\\PreparedBy\\Details.cshtml",
+              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\PreparedBy\\Details.cshtml",
+              "RelativeToolTip": "GatePassApplicaation\\Views\\PreparedBy\\Details.cshtml",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAUwIIAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-19T19:54:34.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\PreparedBy\\Create.cshtml",
+              "RelativeDocumentMoniker": "GatePassApplicaation\\Views\\PreparedBy\\Create.cshtml",
+              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\PreparedBy\\Create.cshtml",
+              "RelativeToolTip": "GatePassApplicaation\\Views\\PreparedBy\\Create.cshtml",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAUwHcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-19T17:30:07.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ApprovedViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Models\\ApprovedViewModel.cs",
+              "RelativeDocumentMoniker": "GatePassApplicaation\\Models\\ApprovedViewModel.cs",
+              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Models\\ApprovedViewModel.cs",
+              "RelativeToolTip": "GatePassApplicaation\\Models\\ApprovedViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T19:11:55.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\PreparedBy\\Edit.cshtml",
+              "RelativeDocumentMoniker": "GatePassApplicaation\\Views\\PreparedBy\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\PreparedBy\\Edit.cshtml",
+              "RelativeToolTip": "GatePassApplicaation\\Views\\PreparedBy\\Edit.cshtml",
+              "ViewState": "AgIAAFMAAACAMTMzMzMgwFsAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-19T19:54:46.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "GatePassApplicaation\\Controllers\\AdminController.cs",
@@ -374,12 +462,36 @@
               "RelativeToolTip": "GatePassApplicaation\\Controllers\\AdminController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T10:13:35.537Z",
+              "WhenOpened": "2025-01-18T18:45:22.995Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 31,
+              "Title": "20250119200309_InitialCreatey.cs",
+              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Migrations\\20250119200309_InitialCreatey.cs",
+              "RelativeDocumentMoniker": "GatePassApplicaation\\Migrations\\20250119200309_InitialCreatey.cs",
+              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Migrations\\20250119200309_InitialCreatey.cs",
+              "RelativeToolTip": "GatePassApplicaation\\Migrations\\20250119200309_InitialCreatey.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T20:03:09.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "PassHeaderViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Models\\PassHeaderViewModel.cs",
+              "RelativeDocumentMoniker": "GatePassApplicaation\\Models\\PassHeaderViewModel.cs",
+              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Models\\PassHeaderViewModel.cs",
+              "RelativeToolTip": "GatePassApplicaation\\Models\\PassHeaderViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T19:08:18.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
               "Title": "BaseController.cs",
               "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Controllers\\BaseController.cs",
               "RelativeDocumentMoniker": "GatePassApplicaation\\Controllers\\BaseController.cs",
@@ -387,20 +499,55 @@
               "RelativeToolTip": "GatePassApplicaation\\Controllers\\BaseController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T10:47:32.579Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-19T18:05:23.744Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\Auth\\Login.cshtml",
-              "RelativeDocumentMoniker": "GatePassApplicaation\\Views\\Auth\\Login.cshtml",
-              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Views\\Auth\\Login.cshtml",
-              "RelativeToolTip": "GatePassApplicaation\\Views\\Auth\\Login.cshtml",
-              "ViewState": "AgIAAAIAAACQZWZmZmYkwA4AAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-15T10:30:47.574Z"
+              "DocumentIndex": 27,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Models\\User.cs",
+              "RelativeDocumentMoniker": "GatePassApplicaation\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Models\\User.cs",
+              "RelativeToolTip": "GatePassApplicaation\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T17:59:52.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "GatePassApplicaation\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "GatePassApplicaation\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T17:59:33.564Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Approved.cs",
+              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Models\\Approved.cs",
+              "RelativeDocumentMoniker": "GatePassApplicaation\\Models\\Approved.cs",
+              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Models\\Approved.cs",
+              "RelativeToolTip": "GatePassApplicaation\\Models\\Approved.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAIwBMAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T17:53:52.495Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AuthorizedBy.cs",
+              "DocumentMoniker": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Models\\AuthorizedBy.cs",
+              "RelativeDocumentMoniker": "GatePassApplicaation\\Models\\AuthorizedBy.cs",
+              "ToolTip": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\Models\\AuthorizedBy.cs",
+              "RelativeToolTip": "GatePassApplicaation\\Models\\AuthorizedBy.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAIwBYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T17:46:18.291Z"
             }
           ]
         }

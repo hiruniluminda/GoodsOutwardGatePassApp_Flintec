@@ -65,6 +65,26 @@
       "PackagePath": "staticwebassets\\Images\\back7.webp"
     },
     {
+      "Id": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\wwwroot\\Images\\backapproved.jpg",
+      "PackagePath": "staticwebassets\\Images\\backapproved.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\wwwroot\\Images\\backapproved2.jpg",
+      "PackagePath": "staticwebassets\\Images\\backapproved2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\wwwroot\\Images\\backapproved3.jpg",
+      "PackagePath": "staticwebassets\\Images\\backapproved3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\wwwroot\\Images\\backapproved4.jpg",
+      "PackagePath": "staticwebassets\\Images\\backapproved4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\wwwroot\\Images\\backapproved5.jpg",
+      "PackagePath": "staticwebassets\\Images\\backapproved5.jpg"
+    },
+    {
       "Id": "C:\\Users\\hiru\\source\\repos\\GatePassApplicaation\\GatePassApplicaation\\wwwroot\\Images\\backtable.jpg",
       "PackagePath": "staticwebassets\\Images\\backtable.jpg"
     },

@@ -15,6 +15,11 @@ wwwroot\Images\back4.jpg
 wwwroot\Images\back5.avif
 wwwroot\Images\back6.jpg
 wwwroot\Images\back7.webp
+wwwroot\Images\backapproved.jpg
+wwwroot\Images\backapproved2.jpg
+wwwroot\Images\backapproved3.jpg
+wwwroot\Images\backapproved4.jpg
+wwwroot\Images\backapproved5.jpg
 wwwroot\Images\backtable.jpg
 wwwroot\Images\logo.jpg
 wwwroot\Images\notapp.avif

@@ -1,5 +1,4 @@
-﻿@model GatePassApplicaation.Models.AuthorizedBy
-
+﻿@model GatePassApplicaation.Models.PassHeaderLead
 
 <style>
     .bdy {
@@ -55,11 +54,14 @@
         text-align: center;
         font-size: 14px;
     }
+
 </style>
+
 <div class="bdy">
     <div class="gate-pass-form">
-
-        <div class="company-logo"><img class="imglogo" src="/Images/logo.jpg" />FLINTEC</div>
+        <div class="company-logo">
+            <img class="imglogo" src="/Images/logo.jpg" /> FLINTEC
+        </div>
         <div class="form-title">GOODS OUTWARD NOTE</div>
 
         <div class="info-section row">
@@ -73,16 +75,13 @@
                 <div class="mb-2">
                     <strong>Taken By:</strong> @Html.DisplayFor(model => model.takenBy)
                 </div>
-                <div class="mb-2">
-                    <strong>Prepared Person:</strong> @Html.DisplayFor(model => model.PreparedPerson)
-                </div>
             </div>
             <div class="col-md-4">
                 <div class="mb-2">
-                    <strong>Pass No:</strong> @Html.DisplayFor(model => model.PreparedById)
+                    <strong>Pass No:</strong> @Html.DisplayFor(model => model.PassNo)
                 </div>
                 <div class="mb-2">
-                    <strong>Authorized Person:</strong> @Html.DisplayFor(model => model.AuthorizedPerson)
+                    <strong>Prepared Person:</strong> @Html.DisplayFor(model => model.PreparedPerson)
                 </div>
                 <div class="mb-2">
                     <strong>Date:</strong> @Html.DisplayFor(model => model.DateTime)
@@ -101,13 +100,17 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>@Html.DisplayFor(model => model.LineNo)</td>
-                    <td>@Html.DisplayFor(model => model.PartNo)</td>
-                    <td>@Html.DisplayFor(model => model.Description)</td>
-                    <td>@Html.DisplayFor(model => model.Quantity)</td>
-                    <td>@Html.DisplayFor(model => model.Value)</td>
-                </tr>
+                @foreach (var modelitem in Model.PassDetails)
+                {
+
+                    <tr>
+                        <td>@Html.DisplayFor(model => modelitem.LineNo)</td>
+                        <td>@Html.DisplayFor(model => modelitem.PartNo)</td>
+                        <td>@Html.DisplayFor(model => modelitem.Description)</td>
+                        <td>@Html.DisplayFor(model => modelitem.Quantity)</td>
+                        <td>@Html.DisplayFor(model => modelitem.Value)</td>
+                    </tr>
+                }
                 @for (int i = 0; i < 7; i++)
                 {
                     <tr>
@@ -136,5 +139,10 @@
             <span><strong>E-mail:</strong> office@flintec.com</span>
             <div>www.flintec.com</div>
         </div>
+        @* <div class="text-center"> *@
+        @*     <button class="btn btn-primary" onclick="window.print()">Print</button> *@
+        @* </div> *@
     </div>
+
+
 </div>

@@ -27,6 +27,9 @@ namespace GatePassApplicaation.Controllers
 
                 if (user.Role == "Admin")
                 {
+                    return RedirectToAction("Index", "Approved");
+                }else if(user.Role == "User")
+                {
                     return RedirectToAction("Index", "PreparedBy");
                 }
                 else

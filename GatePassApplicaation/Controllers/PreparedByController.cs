@@ -1,4 +1,5 @@
 ﻿using GatePassApplicaation.Models;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -16,67 +17,146 @@ namespace GatePassApplicaation.Controllers
 
         public IActionResult Index(DateOnly? startDate, DateOnly? endDate)
         {
-            var details= dbContext.preparedBy.AsQueryable();
+            var details = dbContext.passNotes.Include(d => d.PassHeader).ThenInclude(p => p.Reasons).AsQueryable();
             if (startDate.HasValue && endDate.HasValue)
             {
-                details = details.Where(d=>d.DateTime >= startDate.Value && d.DateTime <= endDate.Value);
+                details = details.Where(d => d.PassHeader.DateTime >= startDate.Value && d.PassHeader.DateTime <= endDate.Value);
             }
+
             ViewData["StartDate"] = startDate?.ToString("yyyy-MM-dd");
             ViewData["EndDate"] = endDate?.ToString("yyyy-MM-dd");
 
-            details = details.OrderByDescending(d => d.PreparedById);
+            details = details.OrderByDescending(d => d.PassNo);
 
-            return View(details.ToList());
+            // Fix: Modify to pass PassHeaders to the view
+            var passHeaders = details.Select(d => d.PassHeader).Distinct().ToList();
+
+            return View(passHeaders);  // Passing PassHeaders to the view
         }
 
         public ActionResult Create()
         {
-            var model = new PreparedBy
+            var model = new PassHeader
             {
                 DateTime = DateOnly.FromDateTime(DateTime.Now),
-                Facility = HttpContext.Session.GetString("Facility")
+                Facility = HttpContext.Session.GetString("Facility"),
+                PassDetails = new List<PassNote>()
             };
             ViewBag.ReasonId = dbContext.reasons.Select(d=>new SelectListItem { Value=d.ReasonId.ToString(),Text=d.ReasonName }).ToList();
             return View(model);
         }
         [HttpPost]
-        public ActionResult Create(PreparedBy preparedBy)
+        public ActionResult Create(PassHeader passHeader)
         {
             ViewBag.ReasonId = dbContext.reasons.Select(d => new SelectListItem { Value = d.ReasonId.ToString(), Text = d.ReasonName }).ToList();
             var createdBy = HttpContext.Session.GetString("UserName");
-            preparedBy.PreparedPerson = createdBy;
-            dbContext.Add(preparedBy);
+            passHeader.PreparedPerson = createdBy;
+
+            if (passHeader.PassDetails != null && passHeader.PassDetails.Any())
+            {
+                foreach (var passNote in passHeader.PassDetails)
+                {
+                    passNote.PassNo = passHeader.PassNo;
+                }
+            }
+
+            dbContext.Add(passHeader);
             dbContext.SaveChanges();
             return RedirectToAction("Index");
         }
 
         public ActionResult Details(int id)
         {
-            var data = dbContext.preparedBy.Include(pb => pb.Reasons).FirstOrDefault(pb => pb.PreparedById == id);
+            var data = dbContext.passHeaders.Include(ph => ph.Reasons).Include(ph => ph.PassDetails).FirstOrDefault(ph => ph.PassNo == id);
+
+            if (data == null)
+            {
+                return NotFound();
+            }
+
             return View("Details", data);
         }
 
-        public ActionResult Edit(int id)
+
+        [HttpGet]
+        public IActionResult Edit(int id)
         {
-            ViewBag.ReasonId = dbContext.reasons.Select(d => new SelectListItem { Value = d.ReasonId.ToString(), Text = d.ReasonName }).ToList();
-            var data = dbContext.preparedBy.Include(pb => pb.Reasons).FirstOrDefault(pb => pb.PreparedById == id);
-            var editdetails = dbContext.preparedBy.Find(id);
-            return View(editdetails);
+            var passHeader = dbContext.passHeaders
+                .Include(ph => ph.PassDetails)
+                .FirstOrDefault(ph => ph.PassNo == id);
+
+            if (passHeader == null)
+            {
+                return NotFound();
+            }
+
+            ViewBag.ReasonId = dbContext.reasons.Select(d => new SelectListItem
+            {
+                Value = d.ReasonId.ToString(),
+                Text = d.ReasonName
+            }).ToList();
+
+            // Initialize PassDetails if it's null
+            if (passHeader.PassDetails == null)
+            {
+                passHeader.PassDetails = new List<PassNote>();
+            }
+
+            return View(passHeader);
         }
+
         [HttpPost]
-        public ActionResult Edit(PreparedBy preparedBy)
+        [ValidateAntiForgeryToken]
+        public IActionResult Edit(PassHeader passHeader)
         {
-            ViewBag.ReasonId = dbContext.reasons.Select(d => new SelectListItem { Value = d.ReasonId.ToString(), Text = d.ReasonName }).ToList();
-            dbContext.Entry(preparedBy).State = EntityState.Modified;
+            
+                ViewBag.ReasonId = dbContext.reasons.Select(d => new SelectListItem
+                {
+                    Value = d.ReasonId.ToString(),
+                    Text = d.ReasonName
+                }).ToList();
+            var createdBy = HttpContext.Session.GetString("UserName");
+
+            passHeader.PreparedPerson = createdBy;
+
+            dbContext.Entry(passHeader).State = EntityState.Modified;
+
+            foreach (var passNote in passHeader.PassDetails)
+            {
+                if (passNote.GoodsId == 0)
+                {
+                    dbContext.passNotes.Add(passNote);
+                }
+                else 
+                {
+                    dbContext.Entry(passNote).State = EntityState.Modified;
+                }
+            }
+
             dbContext.SaveChanges();
+
             return RedirectToAction("Index");
         }
 
-        public ActionResult Delete(int id) {
-            var deletedetails = dbContext.preparedBy.Find(id);
-            dbContext.preparedBy.Remove(deletedetails);
+
+
+
+
+        public ActionResult Delete(int id)
+        {
+            var deleteDetails = dbContext.passHeaders.Include(ph => ph.PassDetails).FirstOrDefault(ph => ph.PassNo == id);
+
+            if (deleteDetails == null)
+            {
+                return NotFound();
+            }
+
+            dbContext.passNotes.RemoveRange(deleteDetails.PassDetails);
+            dbContext.passHeaders.Remove(deleteDetails);
             dbContext.SaveChanges();
+
             return RedirectToAction("Index");
         }
+
     }
 }

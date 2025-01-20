@@ -22,13 +22,58 @@ namespace GatePassApplicaation.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("GatePassApplicaation.Models.AuthorizedBy", b =>
+            modelBuilder.Entity("GatePassApplicaation.Models.PassHeader", b =>
                 {
-                    b.Property<int>("PreparedById")
+                    b.Property<int>("PassNo")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PreparedById"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PassNo"));
+
+                    b.Property<DateOnly>("DateTime")
+                        .HasColumnType("date");
+
+                    b.Property<string>("Department")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Facility")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PreparedPerson")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ReasonId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("SendTo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SupplierName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("takenBy")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("PassNo");
+
+                    b.HasIndex("ReasonId");
+
+                    b.ToTable("passHeaders");
+                });
+
+            modelBuilder.Entity("GatePassApplicaation.Models.PassHeaderAdmin", b =>
+                {
+                    b.Property<int>("PassNo")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PassNo"));
 
                     b.Property<string>("AuthorizedPerson")
                         .IsRequired()
@@ -41,31 +86,13 @@ namespace GatePassApplicaation.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Facility")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("LineNo")
-                        .HasColumnType("int");
-
-                    b.Property<string>("NameOfGoods")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PartNo")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PreparedPerson")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Quantity")
-                        .HasColumnType("int");
 
                     b.Property<int>("ReasonId")
                         .HasColumnType("int");
@@ -78,27 +105,28 @@ namespace GatePassApplicaation.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("Value")
-                        .HasColumnType("float");
-
                     b.Property<string>("takenBy")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("PreparedById");
+                    b.HasKey("PassNo");
 
                     b.HasIndex("ReasonId");
 
-                    b.ToTable("authorizedBy");
+                    b.ToTable("passHeaderAdmins");
                 });
 
-            modelBuilder.Entity("GatePassApplicaation.Models.PreparedBy", b =>
+            modelBuilder.Entity("GatePassApplicaation.Models.PassHeaderLead", b =>
                 {
-                    b.Property<int>("PreparedById")
+                    b.Property<int>("PassNo")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PreparedById"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PassNo"));
+
+                    b.Property<string>("AuthorizedPerson")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateOnly>("DateTime")
                         .HasColumnType("date");
@@ -107,11 +135,45 @@ namespace GatePassApplicaation.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Description")
+                    b.Property<string>("Facility")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Facility")
+                    b.Property<string>("PreparedPerson")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ReasonId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("SendTo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SupplierName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("takenBy")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("PassNo");
+
+                    b.HasIndex("ReasonId");
+
+                    b.ToTable("passHeaderLeads");
+                });
+
+            modelBuilder.Entity("GatePassApplicaation.Models.PassNote", b =>
+                {
+                    b.Property<int>("GoodsId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("GoodsId"));
+
+                    b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -126,36 +188,98 @@ namespace GatePassApplicaation.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("PreparedPerson")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("PassNo")
+                        .HasColumnType("int");
 
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
 
-                    b.Property<int>("ReasonId")
+                    b.Property<double>("Value")
+                        .HasColumnType("float");
+
+                    b.HasKey("GoodsId");
+
+                    b.HasIndex("PassNo");
+
+                    b.ToTable("passNotes");
+                });
+
+            modelBuilder.Entity("GatePassApplicaation.Models.PassNoteAdmin", b =>
+                {
+                    b.Property<int>("GoodsId")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<string>("SendTo")
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("GoodsId"));
+
+                    b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("SupplierName")
+                    b.Property<int>("LineNo")
+                        .HasColumnType("int");
+
+                    b.Property<string>("NameOfGoods")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PartNo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("PassNo")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
 
                     b.Property<double>("Value")
                         .HasColumnType("float");
 
-                    b.Property<string>("takenBy")
+                    b.HasKey("GoodsId");
+
+                    b.HasIndex("PassNo");
+
+                    b.ToTable("passNoteAdmins");
+                });
+
+            modelBuilder.Entity("GatePassApplicaation.Models.PassNoteLead", b =>
+                {
+                    b.Property<int>("GoodsId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("GoodsId"));
+
+                    b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("PreparedById");
+                    b.Property<int>("LineNo")
+                        .HasColumnType("int");
 
-                    b.HasIndex("ReasonId");
+                    b.Property<string>("NameOfGoods")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.ToTable("preparedBy");
+                    b.Property<string>("PartNo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("PassNo")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<double>("Value")
+                        .HasColumnType("float");
+
+                    b.HasKey("GoodsId");
+
+                    b.HasIndex("PassNo");
+
+                    b.ToTable("passNoteLeads");
                 });
 
             modelBuilder.Entity("GatePassApplicaation.Models.Reasons", b =>
@@ -204,7 +328,7 @@ namespace GatePassApplicaation.Migrations
                     b.ToTable("users");
                 });
 
-            modelBuilder.Entity("GatePassApplicaation.Models.AuthorizedBy", b =>
+            modelBuilder.Entity("GatePassApplicaation.Models.PassHeader", b =>
                 {
                     b.HasOne("GatePassApplicaation.Models.Reasons", "Reasons")
                         .WithMany()
@@ -215,7 +339,7 @@ namespace GatePassApplicaation.Migrations
                     b.Navigation("Reasons");
                 });
 
-            modelBuilder.Entity("GatePassApplicaation.Models.PreparedBy", b =>
+            modelBuilder.Entity("GatePassApplicaation.Models.PassHeaderAdmin", b =>
                 {
                     b.HasOne("GatePassApplicaation.Models.Reasons", "Reasons")
                         .WithMany()
@@ -224,6 +348,60 @@ namespace GatePassApplicaation.Migrations
                         .IsRequired();
 
                     b.Navigation("Reasons");
+                });
+
+            modelBuilder.Entity("GatePassApplicaation.Models.PassHeaderLead", b =>
+                {
+                    b.HasOne("GatePassApplicaation.Models.Reasons", "Reasons")
+                        .WithMany()
+                        .HasForeignKey("ReasonId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Reasons");
+                });
+
+            modelBuilder.Entity("GatePassApplicaation.Models.PassNote", b =>
+                {
+                    b.HasOne("GatePassApplicaation.Models.PassHeader", "PassHeader")
+                        .WithMany("PassDetails")
+                        .HasForeignKey("PassNo")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("PassHeader");
+                });
+
+            modelBuilder.Entity("GatePassApplicaation.Models.PassNoteAdmin", b =>
+                {
+                    b.HasOne("GatePassApplicaation.Models.PassHeader", "PassHeader")
+                        .WithMany()
+                        .HasForeignKey("PassNo")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("PassHeader");
+                });
+
+            modelBuilder.Entity("GatePassApplicaation.Models.PassNoteLead", b =>
+                {
+                    b.HasOne("GatePassApplicaation.Models.PassHeaderLead", "PassHeaderLead")
+                        .WithMany("PassDetails")
+                        .HasForeignKey("PassNo")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("PassHeaderLead");
+                });
+
+            modelBuilder.Entity("GatePassApplicaation.Models.PassHeader", b =>
+                {
+                    b.Navigation("PassDetails");
+                });
+
+            modelBuilder.Entity("GatePassApplicaation.Models.PassHeaderLead", b =>
+                {
+                    b.Navigation("PassDetails");
                 });
 #pragma warning restore 612, 618
         }
