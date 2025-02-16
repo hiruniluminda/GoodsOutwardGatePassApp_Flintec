@@ -4,6 +4,7 @@ using GatePassApplicaation.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GatePassApplicaation.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250213121328_InitialCreateonexy")]
+    partial class InitialCreateonexy
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -218,6 +221,9 @@ namespace GatePassApplicaation.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("Id")
+                        .HasColumnType("int");
+
                     b.Property<int>("LineNo")
                         .HasColumnType("int");
 
@@ -228,9 +234,6 @@ namespace GatePassApplicaation.Migrations
                     b.Property<string>("PartNo")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("PassHeaderId")
-                        .HasColumnType("int");
 
                     b.Property<int>("PassNo")
                         .HasColumnType("int");
@@ -243,7 +246,7 @@ namespace GatePassApplicaation.Migrations
 
                     b.HasKey("GoodsId");
 
-                    b.HasIndex("PassHeaderId");
+                    b.HasIndex("Id");
 
                     b.ToTable("passNotes");
                 });
@@ -256,12 +259,12 @@ namespace GatePassApplicaation.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("GoodsId"));
 
-                    b.Property<int>("AdminId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Id")
+                        .HasColumnType("int");
 
                     b.Property<int>("LineNo")
                         .HasColumnType("int");
@@ -285,7 +288,7 @@ namespace GatePassApplicaation.Migrations
 
                     b.HasKey("GoodsId");
 
-                    b.HasIndex("AdminId");
+                    b.HasIndex("Id");
 
                     b.ToTable("passNoteAdmins");
                 });
@@ -302,6 +305,9 @@ namespace GatePassApplicaation.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("Id")
+                        .HasColumnType("int");
+
                     b.Property<int>("LineNo")
                         .HasColumnType("int");
 
@@ -312,9 +318,6 @@ namespace GatePassApplicaation.Migrations
                     b.Property<string>("PartNo")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("PassHeaderLeadId")
-                        .HasColumnType("int");
 
                     b.Property<int>("PassNo")
                         .HasColumnType("int");
@@ -327,7 +330,7 @@ namespace GatePassApplicaation.Migrations
 
                     b.HasKey("GoodsId");
 
-                    b.HasIndex("PassHeaderLeadId");
+                    b.HasIndex("Id");
 
                     b.ToTable("passNoteLeads");
                 });
@@ -439,7 +442,7 @@ namespace GatePassApplicaation.Migrations
                 {
                     b.HasOne("GatePassApplicaation.Models.PassHeader", "PassHeader")
                         .WithMany("PassDetails")
-                        .HasForeignKey("PassHeaderId")
+                        .HasForeignKey("Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -450,7 +453,7 @@ namespace GatePassApplicaation.Migrations
                 {
                     b.HasOne("GatePassApplicaation.Models.PassHeaderAdmin", "PassHeaderAdmin")
                         .WithMany("PassDetails")
-                        .HasForeignKey("AdminId")
+                        .HasForeignKey("Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -461,7 +464,7 @@ namespace GatePassApplicaation.Migrations
                 {
                     b.HasOne("GatePassApplicaation.Models.PassHeaderLead", "PassHeaderLead")
                         .WithMany("PassDetails")
-                        .HasForeignKey("PassHeaderLeadId")
+                        .HasForeignKey("Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

@@ -59,6 +59,9 @@
                     @Html.DisplayNameFor(model => model.Reasons.ReasonName)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.Actions.ActionName)
+            </th>
+            <th>
                     @Html.DisplayNameFor(model => model.takenBy)
             </th>
             <th>
@@ -84,6 +87,9 @@
                     @Html.DisplayFor(modelItem => item.Reasons.ReasonName)
                 </td>
                 <td>
+                    @Html.DisplayFor(modelItem => item.Actions.ActionName)
+                </td>
+                <td>
                     @Html.DisplayFor(modelItem => item.takenBy)
                 </td>
                 <td>
@@ -97,8 +103,8 @@
                 </td>
                 <td>
                     <div class="d-flex justify-content-start gap-2">
-                        <a href="#" onclick="loadDetails(@item.PassNo)" class="btn btn-info">Details</a>
-                        <form asp-action="Approve" asp-route-id="@item.PassNo" method="post" style="display:inline;">
+                        <a href="#" onclick="loadDetails(@item.Id)" class="btn btn-info">Details</a>
+                        <form asp-action="Approve" asp-route-id="@item.Id" method="post" style="display:inline;">
                             <button type="submit" class="btn btn-success">Approve</button>
                         </form>
                     </div>

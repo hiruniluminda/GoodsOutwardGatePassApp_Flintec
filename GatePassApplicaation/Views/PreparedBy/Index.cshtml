@@ -60,6 +60,9 @@
                 @Html.DisplayNameFor(model => model.Reasons.ReasonName)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.Actions.ActionName)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.takenBy)
             </th>
             <th>
@@ -78,10 +81,13 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.PassNo)
+                @Html.DisplayFor(modelItem => item.Id)
             </td>
             <td>
                     @Html.DisplayFor(modelItem => item.Reasons.ReasonName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Actions.ActionName)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.takenBy)
@@ -97,9 +103,9 @@
             </td>
                 <td>
                     <div class="d-flex justify-content-start gap-2">
-                        <a href="#" onclick="loadDetails(@item.PassNo)" class="btn btn-info">Details</a>
-                        <a asp-action="Edit" asp-route-id="@item.PassNo" class="btn btn-warning">Edit</a>
-                        <a href="#" onclick="return confirmDelete(@item.PassNo)" class="btn btn-danger">Delete</a>
+                        <a href="#" onclick="loadDetails(@item.Id)" class="btn btn-info">Details</a>
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">Edit</a>
+                        <a href="#" onclick="return confirmDelete(@item.Id)" class="btn btn-danger">Delete</a>
                     </div>
                 </td>
 

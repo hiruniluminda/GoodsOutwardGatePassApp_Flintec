@@ -8,10 +8,14 @@ namespace GatePassApplicaation.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
         public int PassNo { get; set; }
         public int ReasonId { get; set; }
         [ForeignKey("ReasonId")]
         public Reasons Reasons { get; set; }
+        public int ActionId { get; set; }
+        [ForeignKey("ActionId")]
+        public Action Actions { get; set; }
         public string takenBy { get; set; }
         public string SendTo { get; set; }
         public DateOnly DateTime { get; set; }

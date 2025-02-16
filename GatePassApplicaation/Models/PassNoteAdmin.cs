@@ -16,7 +16,8 @@ namespace GatePassApplicaation.Models
         public int Quantity { get; set; }
         public double Value { get; set; }
         public int PassNo { get; set; }
-        [ForeignKey("PassNo")]
+        public int AdminId { get; set; }
+        [ForeignKey("AdminId")]
         public PassHeaderAdmin PassHeaderAdmin { get; set; }
     }
 }

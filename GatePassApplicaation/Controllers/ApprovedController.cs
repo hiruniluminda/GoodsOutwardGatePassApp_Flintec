@@ -14,7 +14,7 @@ namespace GatePassApplicaation.Controllers
         }
         public IActionResult Index(DateOnly? startDate, DateOnly? endDate)
         {
-            var details = _appDbContext.passNoteLeads.Include(d => d.PassHeaderLead).AsQueryable();
+            var details = _appDbContext.passNoteLeads.Include(d => d.PassHeaderLead).ThenInclude(p => p.Reasons).Include(d => d.PassHeaderLead.Actions).AsQueryable();
             if (startDate.HasValue && endDate.HasValue)
             {
                 details = details.Where(d => d.PassHeaderLead.DateTime >= startDate.Value && d.PassHeaderLead.DateTime <= endDate.Value);
@@ -30,7 +30,7 @@ namespace GatePassApplicaation.Controllers
 
         public IActionResult IndexApproved(DateOnly? startDate, DateOnly? endDate)
         {
-            var approvedIndex = _appDbContext.passNoteAdmins.Include(d => d.PassHeaderAdmin).AsQueryable();
+            var approvedIndex = _appDbContext.passNoteAdmins.Include(d => d.PassHeaderAdmin).ThenInclude(p => p.Reasons).Include(d => d.PassHeaderAdmin.Actions).AsQueryable();
             if (startDate.HasValue && endDate.HasValue)
             {
                 approvedIndex = approvedIndex.Where(d => d.PassHeaderAdmin.DateTime >= startDate.Value && d.PassHeaderAdmin.DateTime <= endDate.Value);
@@ -44,7 +44,7 @@ namespace GatePassApplicaation.Controllers
 
         public ActionResult DetailsNotApproved(int id)
         {
-            var data = _appDbContext.passHeaderLeads.Include(ph => ph.Reasons).Include(ph => ph.PassDetails).FirstOrDefault(ph => ph.PassNo == id);
+            var data = _appDbContext.passHeaderLeads.Include(ph => ph.Reasons).Include(ph=>ph.Actions).Include(ph => ph.PassDetails).FirstOrDefault(ph => ph.Id == id);
 
             if (data == null)
             {
@@ -56,7 +56,7 @@ namespace GatePassApplicaation.Controllers
 
         public ActionResult DetailsApproved(int id)
         {
-            var data = _appDbContext.passHeaderAdmins.Include(ph => ph.Reasons).Include(ph => ph.PassDetails).FirstOrDefault(ph => ph.PassNo == id);
+            var data = _appDbContext.passHeaderAdmins.Include(ph => ph.Reasons).Include(ph=>ph.Actions).Include(ph => ph.PassDetails).FirstOrDefault(ph => ph.Id == id);
 
             if (data == null)
             {
@@ -65,11 +65,12 @@ namespace GatePassApplicaation.Controllers
 
             return View("DetailsApproved", data);
         }
-        [HttpPost]
+
+
         [HttpPost]
         public IActionResult Approve(int id)
         {
-            var passHeaderRecord = _appDbContext.passHeaderLeads.Include(p => p.PassDetails).FirstOrDefault(a => a.PassNo == id);
+            var passHeaderRecord = _appDbContext.passHeaderLeads.Include(p => p.PassDetails).FirstOrDefault(a => a.Id == id);
 
             if (passHeaderRecord == null)
             {
@@ -82,7 +83,9 @@ namespace GatePassApplicaation.Controllers
                 {
                     var passHeaderAdmins = new PassHeaderAdmin
                     {
+                        PassNo = passHeaderRecord.PassNo,
                         ReasonId = passHeaderRecord.ReasonId,
+                        ActionId = passHeaderRecord.ActionId,
                         Facility = passHeaderRecord.Facility,
                         SupplierName = passHeaderRecord.SupplierName,
                         PreparedPerson = passHeaderRecord.PreparedPerson,
@@ -106,7 +109,8 @@ namespace GatePassApplicaation.Controllers
                             PartNo = passNote.PartNo,
                             Quantity = passNote.Quantity,
                             Value = passNote.Value,
-                            PassNo = passHeaderAdmins.PassNo
+                            PassNo = passHeaderAdmins.PassNo,
+                            AdminId = passHeaderAdmins.Id
                         };
 
                         _appDbContext.passNoteAdmins.Add(passNoteAdmin);
@@ -134,7 +138,7 @@ namespace GatePassApplicaation.Controllers
         [HttpPost]
         public ActionResult NonApprove(int id)
         {
-            var passHeaderAdmin = _appDbContext.passHeaderAdmins.Include(p => p.PassDetails).FirstOrDefault(a => a.PassNo == id);
+            var passHeaderAdmin = _appDbContext.passHeaderAdmins.Include(p => p.PassDetails).FirstOrDefault(a => a.Id == id);
 
             if (passHeaderAdmin != null)
             {
@@ -144,7 +148,9 @@ namespace GatePassApplicaation.Controllers
                     {
                         var passHeader = new PassHeaderLead
                         {
+                            PassNo = passHeaderAdmin.PassNo,
                             ReasonId = passHeaderAdmin.ReasonId,
+                            ActionId = passHeaderAdmin.ActionId,
                             Facility = passHeaderAdmin.Facility,
                             SupplierName = passHeaderAdmin.SupplierName,
                             PreparedPerson = passHeaderAdmin.PreparedPerson,
@@ -168,7 +174,8 @@ namespace GatePassApplicaation.Controllers
                                 PartNo = passNoteLead.PartNo,
                                 Quantity = passNoteLead.Quantity,
                                 Value = passNoteLead.Value,
-                                PassNo = passHeader.PassNo
+                                PassNo = passHeader.PassNo,
+                                PassHeaderLeadId = passHeader.Id
                             };
 
                             _appDbContext.passNoteLeads.Add(passNoteLeads);

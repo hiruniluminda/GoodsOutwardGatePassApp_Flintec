@@ -4,6 +4,7 @@ using GatePassApplicaation.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GatePassApplicaation.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250213074159_InitialCreate")]
+    partial class InitialCreate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -229,9 +232,6 @@ namespace GatePassApplicaation.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("PassHeaderId")
-                        .HasColumnType("int");
-
                     b.Property<int>("PassNo")
                         .HasColumnType("int");
 
@@ -243,7 +243,7 @@ namespace GatePassApplicaation.Migrations
 
                     b.HasKey("GoodsId");
 
-                    b.HasIndex("PassHeaderId");
+                    b.HasIndex("PassNo");
 
                     b.ToTable("passNotes");
                 });
@@ -255,9 +255,6 @@ namespace GatePassApplicaation.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("GoodsId"));
-
-                    b.Property<int>("AdminId")
-                        .HasColumnType("int");
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -285,7 +282,7 @@ namespace GatePassApplicaation.Migrations
 
                     b.HasKey("GoodsId");
 
-                    b.HasIndex("AdminId");
+                    b.HasIndex("PassNo");
 
                     b.ToTable("passNoteAdmins");
                 });
@@ -313,9 +310,6 @@ namespace GatePassApplicaation.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("PassHeaderLeadId")
-                        .HasColumnType("int");
-
                     b.Property<int>("PassNo")
                         .HasColumnType("int");
 
@@ -327,7 +321,7 @@ namespace GatePassApplicaation.Migrations
 
                     b.HasKey("GoodsId");
 
-                    b.HasIndex("PassHeaderLeadId");
+                    b.HasIndex("PassNo");
 
                     b.ToTable("passNoteLeads");
                 });
@@ -439,7 +433,7 @@ namespace GatePassApplicaation.Migrations
                 {
                     b.HasOne("GatePassApplicaation.Models.PassHeader", "PassHeader")
                         .WithMany("PassDetails")
-                        .HasForeignKey("PassHeaderId")
+                        .HasForeignKey("PassNo")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -450,7 +444,7 @@ namespace GatePassApplicaation.Migrations
                 {
                     b.HasOne("GatePassApplicaation.Models.PassHeaderAdmin", "PassHeaderAdmin")
                         .WithMany("PassDetails")
-                        .HasForeignKey("AdminId")
+                        .HasForeignKey("PassNo")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -461,7 +455,7 @@ namespace GatePassApplicaation.Migrations
                 {
                     b.HasOne("GatePassApplicaation.Models.PassHeaderLead", "PassHeaderLead")
                         .WithMany("PassDetails")
-                        .HasForeignKey("PassHeaderLeadId")
+                        .HasForeignKey("PassNo")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

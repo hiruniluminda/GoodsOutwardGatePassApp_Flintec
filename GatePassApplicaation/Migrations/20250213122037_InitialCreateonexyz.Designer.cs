@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GatePassApplicaation.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250119200309_InitialCreatey")]
-    partial class InitialCreatey
+    [Migration("20250213122037_InitialCreateonexyz")]
+    partial class InitialCreateonexyz
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -25,13 +25,33 @@ namespace GatePassApplicaation.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("GatePassApplicaation.Models.PassHeader", b =>
+            modelBuilder.Entity("GatePassApplicaation.Models.Action", b =>
                 {
-                    b.Property<int>("PassNo")
+                    b.Property<int>("ActionId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PassNo"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ActionId"));
+
+                    b.Property<string>("ActionName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ActionId");
+
+                    b.ToTable("actions");
+                });
+
+            modelBuilder.Entity("GatePassApplicaation.Models.PassHeader", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ActionId")
+                        .HasColumnType("int");
 
                     b.Property<DateOnly>("DateTime")
                         .HasColumnType("date");
@@ -43,6 +63,9 @@ namespace GatePassApplicaation.Migrations
                     b.Property<string>("Facility")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("PassNo")
+                        .HasColumnType("int");
 
                     b.Property<string>("PreparedPerson")
                         .IsRequired()
@@ -63,7 +86,9 @@ namespace GatePassApplicaation.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("PassNo");
+                    b.HasKey("Id");
+
+                    b.HasIndex("ActionId");
 
                     b.HasIndex("ReasonId");
 
@@ -72,11 +97,14 @@ namespace GatePassApplicaation.Migrations
 
             modelBuilder.Entity("GatePassApplicaation.Models.PassHeaderAdmin", b =>
                 {
-                    b.Property<int>("PassNo")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PassNo"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ActionId")
+                        .HasColumnType("int");
 
                     b.Property<string>("AuthorizedPerson")
                         .IsRequired()
@@ -92,6 +120,9 @@ namespace GatePassApplicaation.Migrations
                     b.Property<string>("Facility")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("PassNo")
+                        .HasColumnType("int");
 
                     b.Property<string>("PreparedPerson")
                         .IsRequired()
@@ -112,7 +143,9 @@ namespace GatePassApplicaation.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("PassNo");
+                    b.HasKey("Id");
+
+                    b.HasIndex("ActionId");
 
                     b.HasIndex("ReasonId");
 
@@ -121,11 +154,14 @@ namespace GatePassApplicaation.Migrations
 
             modelBuilder.Entity("GatePassApplicaation.Models.PassHeaderLead", b =>
                 {
-                    b.Property<int>("PassNo")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PassNo"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ActionId")
+                        .HasColumnType("int");
 
                     b.Property<string>("AuthorizedPerson")
                         .IsRequired()
@@ -141,6 +177,9 @@ namespace GatePassApplicaation.Migrations
                     b.Property<string>("Facility")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("PassNo")
+                        .HasColumnType("int");
 
                     b.Property<string>("PreparedPerson")
                         .IsRequired()
@@ -161,7 +200,9 @@ namespace GatePassApplicaation.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("PassNo");
+                    b.HasKey("Id");
+
+                    b.HasIndex("ActionId");
 
                     b.HasIndex("ReasonId");
 
@@ -180,6 +221,9 @@ namespace GatePassApplicaation.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("Id")
+                        .HasColumnType("int");
+
                     b.Property<int>("LineNo")
                         .HasColumnType("int");
 
@@ -202,7 +246,7 @@ namespace GatePassApplicaation.Migrations
 
                     b.HasKey("GoodsId");
 
-                    b.HasIndex("PassNo");
+                    b.HasIndex("Id");
 
                     b.ToTable("passNotes");
                 });
@@ -219,6 +263,9 @@ namespace GatePassApplicaation.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("Id")
+                        .HasColumnType("int");
+
                     b.Property<int>("LineNo")
                         .HasColumnType("int");
 
@@ -241,7 +288,7 @@ namespace GatePassApplicaation.Migrations
 
                     b.HasKey("GoodsId");
 
-                    b.HasIndex("PassNo");
+                    b.HasIndex("Id");
 
                     b.ToTable("passNoteAdmins");
                 });
@@ -269,6 +316,9 @@ namespace GatePassApplicaation.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("PassHeaderLeadId")
+                        .HasColumnType("int");
+
                     b.Property<int>("PassNo")
                         .HasColumnType("int");
 
@@ -280,7 +330,7 @@ namespace GatePassApplicaation.Migrations
 
                     b.HasKey("GoodsId");
 
-                    b.HasIndex("PassNo");
+                    b.HasIndex("PassHeaderLeadId");
 
                     b.ToTable("passNoteLeads");
                 });
@@ -333,33 +383,57 @@ namespace GatePassApplicaation.Migrations
 
             modelBuilder.Entity("GatePassApplicaation.Models.PassHeader", b =>
                 {
+                    b.HasOne("GatePassApplicaation.Models.Action", "Actions")
+                        .WithMany()
+                        .HasForeignKey("ActionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("GatePassApplicaation.Models.Reasons", "Reasons")
                         .WithMany()
                         .HasForeignKey("ReasonId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Actions");
 
                     b.Navigation("Reasons");
                 });
 
             modelBuilder.Entity("GatePassApplicaation.Models.PassHeaderAdmin", b =>
                 {
+                    b.HasOne("GatePassApplicaation.Models.Action", "Actions")
+                        .WithMany()
+                        .HasForeignKey("ActionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("GatePassApplicaation.Models.Reasons", "Reasons")
                         .WithMany()
                         .HasForeignKey("ReasonId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Actions");
 
                     b.Navigation("Reasons");
                 });
 
             modelBuilder.Entity("GatePassApplicaation.Models.PassHeaderLead", b =>
                 {
+                    b.HasOne("GatePassApplicaation.Models.Action", "Actions")
+                        .WithMany()
+                        .HasForeignKey("ActionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("GatePassApplicaation.Models.Reasons", "Reasons")
                         .WithMany()
                         .HasForeignKey("ReasonId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Actions");
 
                     b.Navigation("Reasons");
                 });
@@ -368,7 +442,7 @@ namespace GatePassApplicaation.Migrations
                 {
                     b.HasOne("GatePassApplicaation.Models.PassHeader", "PassHeader")
                         .WithMany("PassDetails")
-                        .HasForeignKey("PassNo")
+                        .HasForeignKey("Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -377,20 +451,20 @@ namespace GatePassApplicaation.Migrations
 
             modelBuilder.Entity("GatePassApplicaation.Models.PassNoteAdmin", b =>
                 {
-                    b.HasOne("GatePassApplicaation.Models.PassHeader", "PassHeader")
-                        .WithMany()
-                        .HasForeignKey("PassNo")
+                    b.HasOne("GatePassApplicaation.Models.PassHeaderAdmin", "PassHeaderAdmin")
+                        .WithMany("PassDetails")
+                        .HasForeignKey("Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("PassHeader");
+                    b.Navigation("PassHeaderAdmin");
                 });
 
             modelBuilder.Entity("GatePassApplicaation.Models.PassNoteLead", b =>
                 {
                     b.HasOne("GatePassApplicaation.Models.PassHeaderLead", "PassHeaderLead")
                         .WithMany("PassDetails")
-                        .HasForeignKey("PassNo")
+                        .HasForeignKey("PassHeaderLeadId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -398,6 +472,11 @@ namespace GatePassApplicaation.Migrations
                 });
 
             modelBuilder.Entity("GatePassApplicaation.Models.PassHeader", b =>
+                {
+                    b.Navigation("PassDetails");
+                });
+
+            modelBuilder.Entity("GatePassApplicaation.Models.PassHeaderAdmin", b =>
                 {
                     b.Navigation("PassDetails");
                 });

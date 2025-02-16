@@ -62,12 +62,15 @@
         <div class="company-logo">
             <img class="imglogo" src="/Images/logo.jpg" /> FLINTEC
         </div>
-        <div class="form-title">GOODS OUTWARD NOTE</div>
+        <div class="form-title">GOODS OUTWARD & RETURNABLE NOTE</div>
 
         <div class="info-section row">
             <div class="col-md-8">
                 <div class="mb-2">
                     <strong>Reason:</strong> @Html.DisplayFor(model => model.Reasons.ReasonName)
+                </div>
+                <div class="mb-2">
+                    <strong>Action:</strong> @Html.DisplayFor(model => model.Actions.ActionName)
                 </div>
                 <div class="mb-2">
                     <strong>Send To:</strong> @Html.DisplayFor(model => model.SendTo)
@@ -130,11 +133,13 @@
 
         <div class="company-details">
             <strong>FLINTEC TRANSDUCERS (PVT) LTD</strong>
-            <div>Phase 1, Spur Road 2, K.E.P.Z. -Katunayake.</div>
+            <div>Katunayake(Phase 1, Spur Road 2, K.E.P.Z. -Katunayake)</div>
+            <div>Koggala(Export Processing Zone, Koggala 80630)</div>
         </div>
 
         <div class="contact-info">
-            <span><strong>Phone:</strong> 011-4837700</span> •
+            <span><strong>Phone(Katunayake):</strong> 011-4837700</span> •
+            <span><strong>Phone(Koggala):</strong> 0912 282 200</span></br>
             <span><strong>Fax:</strong> 011-2252142</span> •
             <span><strong>E-mail:</strong> office@flintec.com</span>
             <div>www.flintec.com</div>

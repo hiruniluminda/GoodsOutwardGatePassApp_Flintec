@@ -17,7 +17,7 @@ namespace GatePassApplicaation.Controllers
 
         public IActionResult Index(DateOnly? startDate, DateOnly? endDate)
         {
-            var details = dbContext.passNotes.Include(d => d.PassHeader).ThenInclude(p => p.Reasons).AsQueryable();
+            var details = dbContext.passNotes.Include(d => d.PassHeader).ThenInclude(p => p.Reasons).Include(d => d.PassHeader.Actions).AsQueryable();
             if (startDate.HasValue && endDate.HasValue)
             {
                 details = details.Where(d => d.PassHeader.DateTime >= startDate.Value && d.PassHeader.DateTime <= endDate.Value);
@@ -43,14 +43,34 @@ namespace GatePassApplicaation.Controllers
                 PassDetails = new List<PassNote>()
             };
             ViewBag.ReasonId = dbContext.reasons.Select(d=>new SelectListItem { Value=d.ReasonId.ToString(),Text=d.ReasonName }).ToList();
+            ViewBag.ActionId = dbContext.actions.Select(c=>new SelectListItem { Value=c.ActionId.ToString(),Text=c.ActionName }).ToList();
             return View(model);
         }
-        [HttpPost]
-        public ActionResult Create(PassHeader passHeader)
+
+        public async Task<int> GetNextPassNo()
         {
-            ViewBag.ReasonId = dbContext.reasons.Select(d => new SelectListItem { Value = d.ReasonId.ToString(), Text = d.ReasonName }).ToList();
+            var latestPass = await dbContext.passHeaders
+                                           .OrderByDescending(p => p.Id)
+                                           .FirstOrDefaultAsync();
+            return (latestPass != null) ? latestPass.PassNo + 1 : 1000; // Start from 1000 if empty
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create(PassHeader passHeader)
+        {
+            ViewBag.ReasonId = await dbContext.reasons
+                .Select(d => new SelectListItem { Value = d.ReasonId.ToString(), Text = d.ReasonName })
+                .ToListAsync();
+
+            ViewBag.ActionId = await dbContext.actions
+                .Select(c => new SelectListItem { Value = c.ActionId.ToString(), Text = c.ActionName })
+                .ToListAsync();
+
             var createdBy = HttpContext.Session.GetString("UserName");
             passHeader.PreparedPerson = createdBy;
+
+            // Await the async method properly
+            passHeader.PassNo = await GetNextPassNo();
 
             if (passHeader.PassDetails != null && passHeader.PassDetails.Any())
             {
@@ -61,13 +81,17 @@ namespace GatePassApplicaation.Controllers
             }
 
             dbContext.Add(passHeader);
-            dbContext.SaveChanges();
+            await dbContext.SaveChangesAsync(); // Make it async
+            passHeader.PassNo = passHeader.Id;
+            dbContext.Update(passHeader);
+            await dbContext.SaveChangesAsync();
             return RedirectToAction("Index");
         }
 
+
         public ActionResult Details(int id)
         {
-            var data = dbContext.passHeaders.Include(ph => ph.Reasons).Include(ph => ph.PassDetails).FirstOrDefault(ph => ph.PassNo == id);
+            var data = dbContext.passHeaders.Include(ph=>ph.Actions).Include(ph => ph.Reasons).Include(ph => ph.PassDetails).FirstOrDefault(ph => ph.Id == id);
 
             if (data == null)
             {
@@ -83,7 +107,7 @@ namespace GatePassApplicaation.Controllers
         {
             var passHeader = dbContext.passHeaders
                 .Include(ph => ph.PassDetails)
-                .FirstOrDefault(ph => ph.PassNo == id);
+                .FirstOrDefault(ph => ph.Id == id);
 
             if (passHeader == null)
             {
@@ -95,6 +119,7 @@ namespace GatePassApplicaation.Controllers
                 Value = d.ReasonId.ToString(),
                 Text = d.ReasonName
             }).ToList();
+            ViewBag.ActionId = dbContext.actions.Select(c => new SelectListItem { Value = c.ActionId.ToString(), Text = c.ActionName }).ToList();
 
             // Initialize PassDetails if it's null
             if (passHeader.PassDetails == null)
@@ -115,6 +140,8 @@ namespace GatePassApplicaation.Controllers
                     Value = d.ReasonId.ToString(),
                     Text = d.ReasonName
                 }).ToList();
+            ViewBag.ActionId = dbContext.actions.Select(c => new SelectListItem { Value = c.ActionId.ToString(), Text = c.ActionName }).ToList();
+
             var createdBy = HttpContext.Session.GetString("UserName");
 
             passHeader.PreparedPerson = createdBy;
@@ -144,7 +171,7 @@ namespace GatePassApplicaation.Controllers
 
         public ActionResult Delete(int id)
         {
-            var deleteDetails = dbContext.passHeaders.Include(ph => ph.PassDetails).FirstOrDefault(ph => ph.PassNo == id);
+            var deleteDetails = dbContext.passHeaders.Include(ph => ph.PassDetails).FirstOrDefault(ph => ph.Id == id);
 
             if (deleteDetails == null)
             {

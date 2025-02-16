@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GatePassApplicaation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f558fbaeb74956ecaf59d220fa952e2d9ad8ff61")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43218c4694fd9fd314ddb9e2470fa6f06682752c")]
 [assembly: System.Reflection.AssemblyProductAttribute("GatePassApplicaation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GatePassApplicaation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

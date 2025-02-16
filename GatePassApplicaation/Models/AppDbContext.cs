@@ -14,10 +14,11 @@ namespace GatePassApplicaation.Models
         public DbSet<PassNoteAdmin> passNoteAdmins { get; set; }
         public DbSet<User> users { get; set; }
         public DbSet<Reasons> reasons { get; set; }
+        public DbSet<Action> actions { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var connectionString = "Server=DESKTOP-UBNQBT2\\SQLEXPRESS;Database=GatePassAppDb;Trusted_Connection=True;TrustServerCertificate=True";
+            var connectionString = "Server=DESKTOP-UBNQBT2\\SQLEXPRESS;Database=GatePassAppDbNew;Trusted_Connection=True;TrustServerCertificate=True";
             optionsBuilder.UseSqlServer(connectionString);
         }
     }
